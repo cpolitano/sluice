@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background-image: '../images/sluice.jpg' no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Satisfy', cursive;
+	font-size: 2em;
+	color: #FFF;
+}
