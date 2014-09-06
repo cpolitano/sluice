@@ -14,13 +14,65 @@
  *= require_self
  */
 
-body {
-	background-image: '../images/sluice.jpg' no-repeat;
+html {
+	background: url(images/sluice.jpg) no-repeat center center fixed;
 	background-size: cover;
+	background-color: #DDD;
+}
+
+body {
+	margin: 0 auto;
+	color: #FFF;
+}
+
+header {
+	height: 100px;
+	width: 90%;
+	margin: 0 5%;
 }
 
 h1 {
+	margin: 0 auto;
 	font-family: 'Satisfy', cursive;
-	font-size: 2em;
+	font-size: 4em;
+	text-align: center;
+}
+
+nav {
+	height: 50px;
+	width: 90%;
+	margin: 5% 5%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.25em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	border: 1px solid #FFF;
+	width: 20%;
+	margin: 0 5%;
+	display: inline-block;
+	line-height: 50px;
+	background: none;
+	text-align: center;
+	border-radius: 8px;
+}
+
+nav a {
 	color: #FFF;
+	text-decoration: none;
+}
+
+.container {
+	width: 75%;
+	margin: 10% auto;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.75em;
+	text-align: center;
 }
