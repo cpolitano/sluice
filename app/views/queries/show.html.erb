@@ -1,0 +1,10 @@
+<div class="show">
+
+<h2>Results for <%= @query.keyword %></h2>
+
+
+<% @tweets["statuses"].each do |tweet| %>    
+    <p>@<%= tweet["user"]["screen_name"] %> - <%= tweet["text"] %></p>
+<% end %>
+
+</div>

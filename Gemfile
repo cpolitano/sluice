@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+gem 'oauth'
+gem 'json'
+gem 'httparty'
 
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

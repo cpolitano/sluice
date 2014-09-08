@@ -94,8 +94,21 @@ a, nav a {
 	width: 60%;
 }
 
+ol {
+	font-size: 1.5em;
+	margin: 5% auto;
+	width: 50%;
+}
+
+.show {
+	background-color: rgba(255,255,255,.4);
+	color: #333;
+	padding: 2%;
+	width: 100%;
+}
+
 p {
-	font-size: 1.75em;
+	font-size: 1.5em;
 	margin: 2% auto;
 	text-align: center;
 	width: 600px;

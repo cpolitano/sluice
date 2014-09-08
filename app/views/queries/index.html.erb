@@ -1,6 +1,18 @@
 
+<% if user_signed_in? %>
+  <div class="show">
+	<h2>Your Queries</h2>
+		<ol>
+			<% @queries.each do |query| %>
+				<li><%= query.keyword %><br>
+					<%= link_to 'View', query_path(query.id) %> | <%= link_to 'Edit', edit_query_path(query.id) %> | <%= link_to 'Delete', query_path(query.id), :method => :delete %></li>
+			<% end %>
+		</ol>
+  </div>
+
+<% else %>
+	<h2>Extracting needle-in-a-haystack data from Twitter for journalists and researchers.</h2>
+<% end %>
 
 
-<h2>Extracting needle-in-a-haystack data from Twitter for journalists and researchers.
-</h2>
 
