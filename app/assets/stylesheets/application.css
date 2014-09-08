@@ -28,13 +28,14 @@ body {
 
 header {
 	height: 100px;
-	margin: 0 5%;
+	margin: 0 auto;
 	width: 90%;
 }
 
 h1 {
 	font-family: 'Satisfy', cursive;
 	font-size: 5em;
+	width: 50%;
 }
 
 h1, h2 {
@@ -44,35 +45,42 @@ h1, h2 {
 
 h2 {
 	font-size: 2.5em;
-	width: 600px;
+	width: 80%;
 }
 
 nav {
 	height: 50px;
-	margin: 0 auto;
+	margin: 5% auto;
+}
+
+.menu {
 	width: 90%;
 }
 
-ul {
+.signin {
+	width: 48%;
+}
+
+nav ul {
 	list-style-type: none;
-	margin: 5% auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
-li {
+nav li {
 	background-color: rgba(255,255,255,0);
 	border: 2px solid #FFF;
 	border-radius: 8px;
 	display: inline-block;
 	font-size: 1.25em;
 	line-height: 50px;
-	margin: 0 5%;
+	margin: 0 3%;
 	text-align: center;
 	transition: background-color 0.3s ease;
-	width: 200px;
+	width: 175px;
 }
 
-li:hover {
+nav li:hover {
 	background-color: rgba(255,255,255,.35);
 }
 
@@ -82,7 +90,7 @@ a, nav a {
 }
 
 .container {
-	margin: 5% auto;
+	margin: 8% auto;
 	width: 60%;
 }
 
