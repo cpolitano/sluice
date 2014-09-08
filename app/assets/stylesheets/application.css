@@ -15,64 +15,114 @@
  */
 
 html {
-	background: url(images/sluice.jpg) no-repeat center center fixed;
-	background-size: cover;
+	background: url(/assets/sluice.jpg) no-repeat center center fixed;
 	background-color: #DDD;
+	background-size: cover;
 }
 
 body {
-	margin: 0 auto;
 	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
 }
 
 header {
 	height: 100px;
-	width: 90%;
 	margin: 0 5%;
+	width: 90%;
 }
 
 h1 {
-	margin: 0 auto;
 	font-family: 'Satisfy', cursive;
-	font-size: 4em;
+	font-size: 5em;
+}
+
+h1, h2 {
+	margin: 0 auto;
 	text-align: center;
+}
+
+h2 {
+	font-size: 2.5em;
+	width: 600px;
 }
 
 nav {
 	height: 50px;
+	margin: 0 auto;
 	width: 90%;
-	margin: 5% 5%;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.25em;
 }
 
 ul {
 	list-style-type: none;
+	margin: 5% auto;
+	width: 100%;
 }
 
 li {
-	border: 1px solid #FFF;
-	width: 20%;
-	margin: 0 5%;
-	display: inline-block;
-	line-height: 50px;
-	background: none;
-	text-align: center;
+	background-color: rgba(255,255,255,0);
+	border: 2px solid #FFF;
 	border-radius: 8px;
+	display: inline-block;
+	font-size: 1.25em;
+	line-height: 50px;
+	margin: 0 5%;
+	text-align: center;
+	transition: background-color 0.3s ease;
+	width: 200px;
 }
 
-nav a {
+li:hover {
+	background-color: rgba(255,255,255,.35);
+}
+
+a, nav a {
 	color: #FFF;
 	text-decoration: none;
 }
 
 .container {
-	width: 75%;
-	margin: 10% auto;
+	margin: 5% auto;
+	width: 60%;
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
+	margin: 2% auto;
+	text-align: center;
+	width: 600px;
+}
+
+input, form {
+	font-size: 1.25em;
 	text-align: center;
 }
+
+form {
+	display: block;
+	margin: 5% auto;
+	width: 400px;
+}
+
+input {
+	background-color: rgba(255,255,255,.2);
+	border: 2px solid #FFF;
+	border-radius: 8px;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	height: 50px;
+	line-height: 50px;
+	margin: 10px auto;
+	width: 200px;
+}
+
+input {
+	transition: background-color 0.3s ease;
+	background-color: rgba(255,255,255,0);
+}
+
+input:hover {
+	background-color: rgba(255,255,255,.35);
+}
+
+
