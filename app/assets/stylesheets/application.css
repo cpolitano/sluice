@@ -74,7 +74,7 @@ nav li {
 	display: inline-block;
 	font-size: 1.25em;
 	line-height: 50px;
-	margin: 0 3%;
+	margin: 0 2%;
 	text-align: center;
 	transition: background-color 0.3s ease;
 	width: 175px;
@@ -84,7 +84,11 @@ nav li:hover {
 	background-color: rgba(255,255,255,.35);
 }
 
-a, nav a {
+a {
+	color: #FFF;
+}
+
+.show a, nav a {
 	color: #FFF;
 	text-decoration: none;
 }
@@ -97,14 +101,27 @@ a, nav a {
 ol {
 	font-size: 1.5em;
 	margin: 5% auto;
-	width: 50%;
+	width: 70%;
 }
 
 .show {
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(255,255,255,.5);
 	color: #333;
 	padding: 2%;
 	width: 100%;
+}
+
+.show form {
+	margin: 1% auto;
+	width: 200px;
+}
+
+.show input {
+	height: 40px;
+	line-height: 40px;
+	margin-top: -5px;
+	margin-bottom: 25px;
+	width: 100px;
 }
 
 p {
@@ -134,12 +151,8 @@ input {
 	height: 50px;
 	line-height: 50px;
 	margin: 10px auto;
-	width: 200px;
-}
-
-input {
 	transition: background-color 0.3s ease;
-	background-color: rgba(255,255,255,0);
+	width: 200px;
 }
 
 input:hover {

@@ -1,10 +1,29 @@
 <div class="show">
-
-<h2>Results for <%= @query.keyword %></h2>
-
-
-<% @tweets["statuses"].each do |tweet| %>    
-    <p>@<%= tweet["user"]["screen_name"] %> - <%= tweet["text"] %></p>
-<% end %>
-
+	<h2>Results for <%= @query.keyword %></h2>
+	<% @tweets["statuses"].each do |tweet| %>  
+	    <p><a href="https://twitter.com/<%= tweet["user"]["screen_name"] %>">
+	    	@<%= tweet["user"]["screen_name"] %></a><br>
+	    	<%= tweet["text"] %><br>
+	    	<%= form_for @tweet, url: query_tweets_path(query_id: @query.id) do |new_tweet| %>
+    		<%= hidden_field_tag :screen_name, tweet["user"]["screen_name"] %>
+    		<%= hidden_field_tag :name, tweet["user"]["name"] %>
+    		<%= hidden_field_tag :text, tweet["text"] %>
+    		<%= hidden_field_tag :link_url, tweet["urls"] %>
+    		<%= hidden_field_tag :location, tweet["user"]["location"] %>
+    		<%= hidden_field_tag :created_at, tweet["created_at"] %>
+    		<%= hidden_field_tag :tweetid, tweet["id"] %>
+        	<%= new_tweet.submit "Save" %>
+    		<% end %>
+	    </p>
+	<% end %>
 </div>
+
+
+
+
+
+
+    
+
+
+

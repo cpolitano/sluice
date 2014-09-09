@@ -7,11 +7,9 @@ class CreateTweets < ActiveRecord::Migration
       t.string :link_url
       t.string :created_at
       t.string :location
-      t.integer :tweet_id
+      t.string :tweetid
       t.references :user, index: true
       t.references :query, index: true
-
-      t.timestamps
     end
   end
 end

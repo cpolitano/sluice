@@ -1,0 +1,19 @@
+<% if @tweets.count > 0 %>
+	<div class="show">
+		<h2>Saved Tweets for <%= @query.keyword %></h2>
+			<ul>
+				<% @tweets.each do |tweet| %>
+					<li>User: <a href="https://twitter.com/<%= tweet.screen_name %>">@<%= tweet.screen_name %></a><br>
+		    		Name: <%= tweet.name %><br>
+		    		Text: <%= tweet.text %><br>
+		    		Date: <%= tweet.created_at %><br>
+		    		Location: <%= tweet.location %><br>
+		    		<a href="https://twitter.com/<%= tweet.screen_name %>/status/<%= tweet.tweetid %>">View on Twitter</a><br>
+		    		<%= link_to 'Delete', query_tweet_path({query_id: @query.id, id: tweet.id}), :method => :delete %></li>
+				<% end %>
+			</ul>
+	</div>
+<% else %>
+	<h2>No tweets saved yet.<br>
+	<%= link_to 'Run the query', query_path(@query.id) %> and save important tweets to view here.</h2>
+<% end %>

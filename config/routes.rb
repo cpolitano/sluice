@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :queries
-  resources :tweets, only: [:index]
+  resources :queries do
+      resources :tweets, except: [:show, :edit, :update]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

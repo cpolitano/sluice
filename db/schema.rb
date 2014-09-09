@@ -26,16 +26,15 @@ ActiveRecord::Schema.define(version: 20140905204618) do
   add_index "queries", ["user_id"], name: "index_queries_on_user_id", using: :btree
 
   create_table "tweets", force: true do |t|
-    t.string   "screen_name"
-    t.string   "name"
-    t.string   "text"
-    t.string   "link_url"
-    t.datetime "created_at"
-    t.string   "location"
-    t.integer  "tweet_id"
-    t.integer  "user_id"
-    t.integer  "query_id"
-    t.datetime "updated_at"
+    t.string  "screen_name"
+    t.string  "name"
+    t.string  "text"
+    t.string  "link_url"
+    t.string  "created_at"
+    t.string  "location"
+    t.string  "tweetid"
+    t.integer "user_id"
+    t.integer "query_id"
   end
 
   add_index "tweets", ["query_id"], name: "index_tweets_on_query_id", using: :btree
