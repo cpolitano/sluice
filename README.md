@@ -4,18 +4,18 @@
 
 
 ## Overview
-_Sluice_ is a web application that helps journalists, researchers, and other social media analysts extract needle-in-a-haystack data from Twitter. It was developed for the August 2014 Web Development Immersive course at General Assembly in Washington, DC.
+*Sluice* is a web application that helps journalists, researchers, and other social media analysts extract needle-in-a-haystack data from Twitter. It was developed for the August 2014 Web Development Immersive course at General Assembly in Washington, DC.
 
-[Sluice](http://sluice-wdi.herokuapp.com/)
+###[Sluice](http://sluice-wdi.herokuapp.com/)
 
 
 ## Technology
 * Ruby 2.1.1
 * Rails 4.1.1
 * PostgreSQL Database
-* Authentication and Authorization using devise
+* Authentication and Authorization using [devise](https://github.com/plataformatec/devise)
 * Twitter Search API
-* Testing using rspec-rails and shoulda-matchers
+* Testing using [rspec-rails](https://github.com/rspec/rspec-rails) and [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 
 
 ## User Stories
