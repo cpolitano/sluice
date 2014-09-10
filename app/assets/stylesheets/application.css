@@ -29,13 +29,13 @@ body {
 header {
 	height: 100px;
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 }
 
 h1 {
 	font-family: 'Satisfy', cursive;
 	font-size: 5em;
-	width: 50%;
+	width: 100%;
 }
 
 h1, h2 {
@@ -51,6 +51,7 @@ h2 {
 nav {
 	height: 50px;
 	margin: 5% auto;
+	padding: 0 auto;
 }
 
 .menu {
@@ -111,7 +112,6 @@ ol {
 .show {
 	background-color: rgba(255,255,255,.5);
 	color: #333;
-	margin: 0 auto;
 	padding: 2%;
 	width: 100%;
 }
