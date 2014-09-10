@@ -10,10 +10,14 @@
 		</ol>
   </div>
 <% elsif user_signed_in? %>
-	<h2><%= link_to 'Create a query', new_query_path %><br>
-	 to get started.</h2>
+	<div class="shadow">
+		<h2><%= link_to 'Create a query', new_query_path %><br>
+	 	to get started.</h2>
+	 </div>
 <% else %>
-	<h2>Extracting needle-in-a-haystack data from Twitter for journalists and researchers.</h2>
+	<div class="shadow">
+		<h2>Extracting needle-in-a-haystack data from Twitter for journalists and researchers.</h2>
+	</div>
 <% end %>
 
 

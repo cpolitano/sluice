@@ -14,6 +14,8 @@
 			</ul>
 	</div>
 <% else %>
+	<div class="shadow">
 	<h2>No tweets saved yet.<br>
-	<%= link_to 'Run the query', query_path(@query.id) %> and save important tweets to view here.</h2>
+		<%= link_to 'Run the query', query_path(@query.id) %> and save important tweets to view here.</h2>
+	</div>
 <% end %>

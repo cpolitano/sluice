@@ -54,11 +54,11 @@ nav {
 }
 
 .menu {
-	width: 90%;
+	width: 65%;
 }
 
 .signin {
-	width: 48%;
+	width: 45%;
 }
 
 nav ul {
@@ -88,14 +88,18 @@ a {
 	color: #FFF;
 }
 
+.container {
+	margin: 5% auto;
+	width: 60%;
+}
+
+.shadow {
+	text-shadow: 0px 3px 5px rgba(0, 0, 0, .75);
+}
+
 .show a, nav a {
 	color: #FFF;
 	text-decoration: none;
-}
-
-.container {
-	margin: 8% auto;
-	width: 60%;
 }
 
 ol {
@@ -107,6 +111,7 @@ ol {
 .show {
 	background-color: rgba(255,255,255,.5);
 	color: #333;
+	margin: 0 auto;
 	padding: 2%;
 	width: 100%;
 }

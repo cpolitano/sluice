@@ -3,7 +3,6 @@ class TweetsController < ApplicationController
 	#display all tweets saved by user
 	def index
 		@query = Query.find(params[:query_id])
-		#@tweets = Tweet.all
 		@tweets = Tweet.where(query_id: @query.id)
 	end
 
