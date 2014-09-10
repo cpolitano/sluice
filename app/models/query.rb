@@ -7,7 +7,7 @@ class Query < ActiveRecord::Base
 
   def search_twitter(keyword)
   	consumer_key = OAuth::Consumer.new(ENV['API_KEY'],ENV['API_SECRET'])
-    access_token = OAuth::Token.new(ENV['ACESS_TOKEN'],ENV['ACESS_TOKEN_SECRET'])
+    access_token = OAuth::Token.new(ENV['ACCESS_TOKEN'],ENV['ACCESS_TOKEN_SECRET'])
     baseurl = "https://api.twitter.com"
     path = "/1.1/search/tweets.json"
     search_term = URI.encode_www_form("q" => "#{keyword}")
