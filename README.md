@@ -36,5 +36,7 @@ The complete user stories and backlog are recorded on this [pivotal tracker](htt
 
 ## ERD
 
+View the [ERD](https://github.com/cpolitano/sluice/blob/master/ERD-Sluice.png).
+
 
 ##### Written by Clare Politano
