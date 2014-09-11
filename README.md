@@ -6,7 +6,7 @@
 ## Overview
 *Sluice* is a web application that helps journalists, researchers, and other social media analysts extract needle-in-a-haystack data from Twitter. It was developed for the August 2014 Web Development Immersive course at General Assembly in Washington, DC.
 
-###[Sluice](http://sluice-wdi.herokuapp.com/)
+#### Vist [Sluice](http://sluice-wdi.herokuapp.com/)
 
 
 ## Technology
