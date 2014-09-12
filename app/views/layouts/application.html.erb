@@ -17,7 +17,7 @@
 	</header>
 
 	<% if user_signed_in? %>
-		<nav class="menu">
+		<nav class="menu clearfix">
 			<ul>
 				<li><%= link_to 'Home', queries_path %></li>
 				<li><%= link_to 'New Query', new_query_path %></li>
@@ -25,7 +25,7 @@
 			</ul>
 		</nav>
 	  <% else %>
-		<nav class="signin">
+		<nav class="signin clearfix">
 			<ul>
 				<li><%= link_to 'Sign Up', new_user_registration_path %></li>
 				<li><%= link_to 'Sign In', new_user_session_path %></li>

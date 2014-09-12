@@ -20,6 +20,7 @@ html {
 	background-size: cover;
 }
 
+
 body {
 	color: #FFF;
 	font-family: 'Raleway', sans-serif;
@@ -28,7 +29,6 @@ body {
 
 header {
 	height: 100px;
-	margin: 0 auto;
 	width: 100%;
 }
 
@@ -41,48 +41,39 @@ h1 {
 h1, h2 {
 	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
 
 h2 {
 	font-size: 2.5em;
-	width: 80%;
-}
-
-nav {
-	height: 50px;
-	margin: 5% auto;
-	padding: 0 auto;
-}
-
-.menu {
-	width: 65%;
-}
-
-.signin {
-	width: 45%;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0 auto;
-	width: 100%;
+	margin: 3% 0;
+	padding: 0;
+	text-align: center;
 }
 
 nav li {
-	background-color: rgba(255,255,255,0);
+	display: inline;
+	margin: 2%;
+}
+
+nav a {
+	background: rgba(255,255,255,0);
 	border: 2px solid #FFF;
 	border-radius: 8px;
 	display: inline-block;
 	font-size: 1.25em;
 	line-height: 50px;
-	margin: 0 2%;
+	padding: 0 50px;
 	text-align: center;
-	transition: background-color 0.3s ease;
-	width: 175px;
+	transition: background 0.3s ease;
 }
 
-nav li:hover {
-	background-color: rgba(255,255,255,.35);
+nav a:hover {
+	background: rgba(255,255,255,.35);
 }
 
 a {
@@ -113,7 +104,6 @@ ol {
 	background-color: rgba(255,255,255,.5);
 	color: #333;
 	padding: 2%;
-	width: 100%;
 }
 
 .show form {
