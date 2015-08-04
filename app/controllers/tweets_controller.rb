@@ -14,25 +14,26 @@ class TweetsController < ApplicationController
 	def create
 		@tweet = Tweet.new(tweet_params)
 		@query = Query.find(params[:query_id])
-	    @tweet.user_id = current_user.id
-	    @tweet.query_id = @query.id
-	  	if @tweet.save
-	  	 	redirect_to query_tweets_path(@query.id)
-	  	else 
-	  	  render 'index'
-	  	end
+    @tweet.user_id = current_user.id
+    @tweet.query_id = @query.id
+  	if @tweet.save
+  	 	redirect_to query_tweets_path(@query.id)
+  	else
+  	  render 'index'
+  	end
 	end
 
 	#delete the saved tweet from database
 	def destroy
 		@tweet = Tweet.find(params[:id])
-  		@tweet.destroy
-  		redirect_to query_tweets_path
+		@tweet.destroy
+		redirect_to query_tweets_path
 	end
 
   private
 
 	def tweet_params
-	  	params.permit(:screen_name, :name, :text, :link_url, :created_at, :location, :tweetid)
+	  params.permit(:screen_name, :name, :text, :link_url, :created_at, :location, :tweetid)
 	end
+
 end

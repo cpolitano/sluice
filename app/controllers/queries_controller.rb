@@ -13,15 +13,16 @@ class QueriesController < ApplicationController
 	end
 
 	def new
-		  @query = Query.new
+		@query = Query.new
 	end
 
   def create
-  		@query = Query.new(query_params)
-      @query.user_id = current_user.id
+  	@query = Query.new(query_params)
+    @query.user_id = current_user.id
+
   	if @query.save
   	 	redirect_to @query
-  	else 
+  	else
   	  render 'new'
   	end
   end
@@ -32,6 +33,7 @@ class QueriesController < ApplicationController
 
   def update
   	@query = Query.find(params[:id])
+
   	if @query.update(query_params)
   	redirect_to @query
     else
